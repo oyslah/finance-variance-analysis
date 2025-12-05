@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
-from langchain.agents.agent_types import AgentType
 import os
 
 # Page configuration
@@ -134,7 +133,7 @@ if question and api_key:
         agent = create_pandas_dataframe_agent(
             llm,
             df,
-            agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+            agent_type="zero-shot-react-description",
             verbose=True,
             allow_dangerous_code=True  # Required for pandas operations
         )
