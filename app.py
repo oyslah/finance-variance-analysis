@@ -127,7 +127,7 @@ question = st.text_input("Ask a question about your data:")
 
 if question and api_key:
     try:
-        llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=api_key, temperature=0)
+        llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro", google_api_key=api_key, temperature=0)
         
         # Create pandas dataframe agent
         agent = create_pandas_dataframe_agent(
