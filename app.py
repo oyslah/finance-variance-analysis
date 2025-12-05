@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
-from pandasai import SmartDataframe
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
+from langchain.agents.agent_types import AgentType
 import os
 
 # Page configuration
@@ -127,15 +128,32 @@ question = st.text_input("Ask a question about your data:")
 
 if question and api_key:
     try:
-        llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
-        sdf = SmartDataframe(df, config={"llm": llm})
+        llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=api_key, temperature=0)
+        
+        # Create pandas dataframe agent
+        agent = create_pandas_dataframe_agent(
+            llm,
+            df,
+            agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+            verbose=True,
+            allow_dangerous_code=True  # Required for pandas operations
+        )
         
         # Combine context and question
-        final_prompt = f"Context provided by user: {context}. Question: {question}"
+        final_prompt = f"""Context provided by user: {context}
+
+Question: {question}
+
+Please provide a clear and concise answer based on the data and context provided."""
         
         with st.spinner("Analyzing..."):
-            response = sdf.chat(final_prompt)
-            st.write(response)
+            response = agent.invoke(final_prompt)
+            
+            # Display the response
+            if isinstance(response, dict) and 'output' in response:
+                st.write(response['output'])
+            else:
+                st.write(response)
             
     except Exception as e:
         st.error(f"An error occurred: {e}")
