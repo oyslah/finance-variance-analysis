@@ -1,0 +1,121 @@
+Account,Month,Plan,Actuals
+Revenue,Jan,100000,102000
+Revenue,Feb,100000,98000
+Revenue,Mar,100000,105000
+Revenue,Apr,110000,112000
+Revenue,May,110000,108000
+Revenue,Jun,110000,115000
+Revenue,Jul,120000,118000
+Revenue,Aug,120000,122000
+Revenue,Sep,120000,121000
+Revenue,Oct,130000,128000
+Revenue,Nov,130000,135000
+Revenue,Dec,130000,132000
+COGS,Jan,40000,41000
+COGS,Feb,40000,39000
+COGS,Mar,40000,42000
+COGS,Apr,44000,45000
+COGS,May,44000,43000
+COGS,Jun,44000,46000
+COGS,Jul,48000,47000
+COGS,Aug,48000,49000
+COGS,Sep,48000,48500
+COGS,Oct,52000,51000
+COGS,Nov,52000,53000
+COGS,Dec,52000,52500
+Labor,Jan,30000,30000
+Labor,Feb,30000,30000
+Labor,Mar,30000,31000
+Labor,Apr,30000,30000
+Labor,May,30000,30500
+Labor,Jun,30000,30000
+Labor,Jul,32000,32000
+Labor,Aug,32000,32000
+Labor,Sep,32000,32500
+Labor,Oct,32000,32000
+Labor,Nov,32000,33000
+Labor,Dec,32000,32000
+Fixed Costs,Jan,15000,15000
+Fixed Costs,Feb,15000,15200
+Fixed Costs,Mar,15000,14800
+Fixed Costs,Apr,15000,15100
+Fixed Costs,May,15000,15300
+Fixed Costs,Jun,15000,14900
+Fixed Costs,Jul,15000,15000
+Fixed Costs,Aug,15000,15400
+Fixed Costs,Sep,15000,15200
+Fixed Costs,Oct,15000,14700
+Fixed Costs,Nov,15000,15000
+Fixed Costs,Dec,15000,15500
+Variable Costs,Jan,8000,8200
+Variable Costs,Feb,8000,7800
+Variable Costs,Mar,8000,8400
+Variable Costs,Apr,9000,9200
+Variable Costs,May,9000,8800
+Variable Costs,Jun,9000,9300
+Variable Costs,Jul,10000,9800
+Variable Costs,Aug,10000,10200
+Variable Costs,Sep,10000,10100
+Variable Costs,Oct,11000,10800
+Variable Costs,Nov,11000,11300
+Variable Costs,Dec,11000,11100
+G&A,Jan,12000,11800
+G&A,Feb,12000,12200
+G&A,Mar,12000,11900
+G&A,Apr,12000,12300
+G&A,May,12000,12100
+G&A,Jun,12000,11700
+G&A,Jul,13000,12800
+G&A,Aug,13000,13200
+G&A,Sep,13000,13100
+G&A,Oct,13000,12900
+G&A,Nov,13000,13400
+G&A,Dec,13000,13300
+Depreciation,Jan,5000,5000
+Depreciation,Feb,5000,5000
+Depreciation,Mar,5000,5000
+Depreciation,Apr,5000,5000
+Depreciation,May,5000,5000
+Depreciation,Jun,5000,5000
+Depreciation,Jul,5000,5000
+Depreciation,Aug,5000,5000
+Depreciation,Sep,5000,5000
+Depreciation,Oct,5000,5000
+Depreciation,Nov,5000,5000
+Depreciation,Dec,5000,5000
+Interest,Jan,3000,3000
+Interest,Feb,3000,3000
+Interest,Mar,3000,3000
+Interest,Apr,3000,3000
+Interest,May,3000,2900
+Interest,Jun,3000,2900
+Interest,Jul,3000,2900
+Interest,Aug,3000,2800
+Interest,Sep,3000,2800
+Interest,Oct,3000,2800
+Interest,Nov,3000,2700
+Interest,Dec,3000,2700
+Operating Taxes,Jan,2500,2500
+Operating Taxes,Feb,2500,2550
+Operating Taxes,Mar,2500,2480
+Operating Taxes,Apr,2700,2720
+Operating Taxes,May,2700,2680
+Operating Taxes,Jun,2700,2750
+Operating Taxes,Jul,3000,2980
+Operating Taxes,Aug,3000,3050
+Operating Taxes,Sep,3000,3020
+Operating Taxes,Oct,3200,3180
+Operating Taxes,Nov,3200,3250
+Operating Taxes,Dec,3200,3220
+Income Taxes,Jan,5000,5100
+Income Taxes,Feb,5000,4900
+Income Taxes,Mar,5000,5250
+Income Taxes,Apr,5500,5600
+Income Taxes,May,5500,5400
+Income Taxes,Jun,5500,5750
+Income Taxes,Jul,6000,5900
+Income Taxes,Aug,6000,6100
+Income Taxes,Sep,6000,6050
+Income Taxes,Oct,6500,6400
+Income Taxes,Nov,6500,6750
+Income Taxes,Dec,6500,6600
